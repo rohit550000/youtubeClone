@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    transition: .1s all ease-in-out;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
