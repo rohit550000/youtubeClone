@@ -8,18 +8,16 @@ import FirstContextCompo from "./context/firstcontext/FirstContextCompo";
 const App = () => {
   return (
     <>
- 
       <BrowserRouter>
-      <FirstContextCompo>
-      <Header/>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/search/:query" element={<Searched />} />
-          <Route path="/video/:id" element={<VideoInfo />} />
-        </Routes>
+        <FirstContextCompo>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/search/:query" element={<Searched />} />
+            <Route path="/video/:id" element={<VideoInfo />} />
+          </Routes>
         </FirstContextCompo>
       </BrowserRouter>
-   
     </>
   );
 };

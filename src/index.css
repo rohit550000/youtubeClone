@@ -15,3 +15,84 @@ html{
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
+
+body {
+    overflow-y: scroll; /* Add the ability to scroll */
+  }
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  body::-webkit-scrollbar {
+      display: none;
+  }
+  body{
+    -ms-overflow-style: none;  /* IE and Edge */
+  }
+ 
+
+
+.loader {
+    width: 80px;
+    aspect-ratio: 1;
+    border: 10px solid #0000;
+    box-sizing: border-box;
+    background: 
+      radial-gradient(farthest-side,#fff 98%,#0000) 0    0/20px 20px,
+      radial-gradient(farthest-side,#fff 98%,#0000) 100% 0/20px 20px,
+      radial-gradient(farthest-side,#fff 98%,#0000) 100% 100%/20px 20px,
+      radial-gradient(farthest-side,#ed0808 98%,#0000) 0 100%/20px 20px,
+      linear-gradient(#fff 0 0) 50%/40px 40px,
+      #000;
+    background-repeat:no-repeat;
+    filter: blur(4px) contrast(10);
+    animation: l12 0.8s infinite;
+  }
+  @keyframes l12 {
+    100%  {background-position:100% 0,100% 100%,0 100%,0 0,center}
+  }
+
+
+
+
+
+
+
+
+
+  /* HTML: <div class="loader"></div> */
+.twoloader {
+    --s: 25px;
+    --g :5px;  
+    
+    width: calc(3*(1.353*var(--s) + var(--g)));
+    display: grid;
+    justify-items: end;
+    aspect-ratio: 3;
+    overflow: hidden;
+    --_m: linear-gradient(90deg,#0000,#000 15px calc(100% - 15px),#0000);
+    -webkit-mask: var(--_m);
+            mask: var(--_m);
+  }
+  .twoloader:before { 
+    content: "";
+    width: 200%;
+    background:
+      linear-gradient(90deg,#ff1818 50%,#0000 0),
+      conic-gradient(from -90deg at var(--s) calc(0.353*var(--s)),
+        #fff 135deg,#666 0 270deg,#aaa 0); 
+    background-blend-mode: multiply;
+    --_m:
+      linear-gradient(to bottom right,
+         #0000 calc(0.25*var(--s)),#000 0 calc(100% - calc(0.25*var(--s)) - 1.414*var(--g)),#0000 0),
+      conic-gradient(from -90deg at right var(--g) bottom var(--g),#000 90deg,#0000 0);
+    -webkit-mask: var(--_m);
+            mask: var(--_m);
+    background-size:   calc(100%/3) 100%, calc(100%/6) 100%;
+    -webkit-mask-size: calc(100%/6) 100%;
+            mask-size: calc(100%/6) 100%;
+    -webkit-mask-composite: source-in;
+            mask-composite: intersect;
+    animation: l10 1s infinite linear;
+  }
+  @keyframes l10 {
+    to {transform:translate(calc(100%/3))}
+  }

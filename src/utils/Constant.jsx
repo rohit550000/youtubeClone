@@ -7,7 +7,7 @@ import { ImNewspaper } from "react-icons/im";
 import { GiDiamondTrophy, GiEclipse } from "react-icons/gi";
 import { RiLightbulbLine, RiFeedbackLine } from "react-icons/ri";
 import { FiSettings, FiHelpCircle } from "react-icons/fi";
-import { useNavigate } from "react-router-dom";
+
 
 const Constant = () => {
   const SideBarCategories =[
@@ -56,18 +56,3 @@ export const NumberFormatter = (value) => {
       return formatter.format(realnumber);
     }
   };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
