@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
-import SidebarMenuItem from "./SidebarMenuItem";
-import Constant from "../utils/Constant";
-import { FirstContext } from "../context/firstcontext/Context";
+import SidebarMenuItem from "../../homePageComponents/sideBare/SidebarMenuItem";
+import Constant from "../../../utils/Constant";
+import { FirstContext } from "../../../context/firstcontext/Context";
 import { useNavigate } from "react-router-dom";
 
 const Sidebar = () => {

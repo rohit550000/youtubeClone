@@ -1,9 +1,7 @@
-import React, { useEffect } from 'react'
-import { FirstContext } from '../context/firstcontext/Context'
-import { useParams } from 'react-router-dom'
-import { useContext } from 'react'
-import { Link } from 'react-router-dom'
-import { NumberFormatter } from '../utils/Constant'
+import React, { useEffect,useContext } from 'react'
+import { FirstContext } from '../../context/firstcontext/Context'
+import { useParams,Link  } from 'react-router-dom'
+import { NumberFormatter } from '../../utils/Constant'
 
 const SearchedContent = () => {
   const { query } = useParams()

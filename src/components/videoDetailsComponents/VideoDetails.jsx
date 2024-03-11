@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { FetchData } from '../utils/api'
+import { FetchData } from '../../utils/api'
 import YouTube from 'react-youtube'
-import { FirstContext } from '../context/firstcontext/Context'
+import { FirstContext } from '../../context/firstcontext/Context'
 import { FaBell } from "react-icons/fa";
 import { IoMdShareAlt } from "react-icons/io";
 import { HiDownload } from "react-icons/hi";
@@ -28,6 +28,7 @@ const VideoDetails = ({ id }) => {
       }
       setVideoDeta(data?.videoDetails)
       setCategory(data?.videoDetails?.title)
+      console.log(data?.videoDetails?.title)
       console.log(data?.videoDetails?.title)
       setLoading(false)
       const channelId = data?.videoDetails?.channelId

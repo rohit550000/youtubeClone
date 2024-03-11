@@ -1,7 +1,6 @@
-import React, { useMemo } from 'react'
-import Sidebar from '../components/Sidebar'
-import SearchedContent from '../components/SearchedContent'
-import { useContext } from 'react'
+import React, { useMemo, useContext } from 'react'
+import Sidebar from '../components/homePageComponents/sideBare/Sidebar'
+import SearchedContent from '../components/searchedVideoComponents/SearchedContent'
 import { FirstContext } from '../context/firstcontext/Context'
 import { useLocation } from 'react-router-dom'
 

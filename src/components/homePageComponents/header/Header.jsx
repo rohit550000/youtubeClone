@@ -1,12 +1,13 @@
 import React, { useCallback, useContext, useEffect, useState ,useMemo } from "react";
-import img from "../images/yt-logo.png";
+import img from "../../../images/yt-logo.png";
 import { CiSearch } from "react-icons/ci";
 import { AiOutlineVideoCameraAdd } from "react-icons/ai";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { faker } from "@faker-js/faker";
+
 import { useNavigate } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { FirstContext } from "../context/firstcontext/Context";
+import { FirstContext } from "../../../context/firstcontext/Context";
 
 const Header = () => {
   const [query, setQuery] = useState('');

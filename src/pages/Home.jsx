@@ -1,7 +1,6 @@
-import React, { useMemo } from 'react'
-import Sidebar from '../components/Sidebar'
-import MainContent from '../components/MainContent'
-import { useContext } from 'react'
+import React, { useMemo, useContext } from 'react'
+import Sidebar from '../components/homePageComponents/sideBare/Sidebar'
+import MainContent from '../components/homePageComponents/mainVideos/MainContent'
 import { FirstContext } from '../context/firstcontext/Context'
 import { useLocation } from 'react-router-dom'
 import { faker } from "@faker-js/faker";

@@ -1,14 +1,11 @@
 import React, { useContext, useEffect, useMemo, useState } from "react";
-import { FirstContext } from "../context/firstcontext/Context";
-import MainVideos from "./MainVideos";
+import { FirstContext } from "../../../context/firstcontext/Context";
+import MainVideos from "../../homePageComponents/mainVideos/MainVideos";
 
 const MainContent = () => {
   const { categorydata: { contents }, loading } = useContext(FirstContext);
-
-
   return (
     <>
-
       {
         loading ?
         (<div className="col-[2_/_span_3] h-[calc(100vh-5rem)] w-[100%] flex flex-col justify-center items-center bg-black">
@@ -32,9 +29,6 @@ const MainContent = () => {
       </div>
       )
 }
-
-
-
     </>
   );
 };

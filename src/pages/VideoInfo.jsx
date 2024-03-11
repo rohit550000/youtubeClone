@@ -1,8 +1,7 @@
-import React, { useMemo } from 'react'
-import VideoDetails from '../components/VideoDetails'
-import RelatedVideo from '../components/RelatedVideo'
+import React, { useMemo,useContext  } from 'react'
+import VideoDetails from '../components/videoDetailsComponents/VideoDetails'
+import RelatedVideo from '../components/videoDetailsComponents/RelatedVideo'
 import { useLocation, useParams } from 'react-router-dom'
-import { useContext } from 'react'
 import { FirstContext } from '../context/firstcontext/Context'
 
 const VideoInfo = () => {

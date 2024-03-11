@@ -1,8 +1,7 @@
-import React from "react";
-import { NumberFormatter } from "../utils/Constant";
+import React,{ useContext } from "react";
+import { NumberFormatter } from "../../../utils/Constant";
 import { Link } from "react-router-dom";
-import { useContext } from "react";
-import { FirstContext } from "../context/firstcontext/Context";
+import { FirstContext } from "../../../context/firstcontext/Context";
 
 const MainVideos = ({ ele }) => {
   const { fackeImage } = useContext(FirstContext)

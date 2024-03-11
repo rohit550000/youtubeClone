@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
-import { FirstContext } from '../context/firstcontext/Context'
-import { NumberFormatter } from '../utils/Constant'
+import { FirstContext } from '../../context/firstcontext/Context'
+import { NumberFormatter } from '../../utils/Constant'
 import { Link } from 'react-router-dom'
 
 
